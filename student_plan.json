@@ -1,0 +1,39 @@
+{
+  "student_name": "Liam Serrano",
+  "section": "IT0123",
+  "ai_tool": "ChatGPT",
+  "entries": [
+    {
+      "use_case_id": "UC1",
+      "selected_resource_type": "always-on-sandbox",
+      "official_evidence_url": "https://developer.cisco.com/docs/sandbox/",
+      "ai_recommendation_summary": "The AI recommended an Always-On Sandbox because the team needs immediate shared access for non-administrative API exploration.",
+      "verification_status": "verified",
+      "rationale": "Cisco documents that Always-On Sandboxes require no reservation or setup time, are shared, and restrict administrative access while supporting on-demand API exploration. Those characteristics directly match the requirement for immediate, safe, read-only practice without provisioning delays. A Reservation Sandbox would add unnecessary scheduling, setup, and VPN requirements."
+    },
+    {
+      "use_case_id": "UC2",
+      "selected_resource_type": "reservation-sandbox",
+      "official_evidence_url": "https://developer.cisco.com/docs/sandbox/",
+      "ai_recommendation_summary": "The AI recommended a Reservation Sandbox because private configuration testing requires administrative control and an isolated scheduled environment.",
+      "verification_status": "verified",
+      "rationale": "Cisco states that Reservation Sandboxes provide private environments and full administrative access, while requiring reservations, setup time, and typically a VPN connection. The team explicitly accepts those requirements and needs to test configuration changes privately. An Always-On Sandbox is unsuitable because it is shared and restricts administrative access."
+    },
+    {
+      "use_case_id": "UC3",
+      "selected_resource_type": "learning-lab",
+      "official_evidence_url": "https://developer.cisco.com/learning/",
+      "ai_recommendation_summary": "The AI recommended a Learning Lab because the beginner first needs structured, guided instruction and step-by-step API practice.",
+      "verification_status": "verified",
+      "rationale": "Cisco DevNet Learning provides organized learning content and labs that support guided practice across developer and networking topics. This matches a beginner whose immediate objective is structured instruction before independent API work. A Sandbox supplies an execution environment, but it does not by itself replace the requested step-by-step learning path."
+    },
+    {
+      "use_case_id": "UC4",
+      "selected_resource_type": "code-exchange",
+      "official_evidence_url": "https://developer.cisco.com/codeexchange/",
+      "ai_recommendation_summary": "The AI recommended Cisco Code Exchange because the developer wants existing repositories and reusable network-automation examples before building a solution.",
+      "verification_status": "verified",
+      "rationale": "Cisco Code Exchange is a curated collection of code repositories and automation examples from Cisco teams and community contributors. It is therefore the closest match for reviewing reusable implementations before designing new software. Learning Labs focus on guided instruction, while Sandboxes provide environments rather than a searchable collection of existing code."
+    }
+  ]
+}
